@@ -1,0 +1,162 @@
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6, a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Shrikhand";
+  src: url("police/Shrikhand-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("police/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("police/Roboto-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("police/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("police/Roboto-Black.ttf") format("truetype");
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-family: shrikhand;
+  font-size: 1.4rem;
+}
+
+h2 {
+  font-family: Roboto-Bold;
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-family: Roboto-Bold;
+}
+
+p {
+  font-family: Roboto-Regular;
+  font-size: 1.2rem;
+}
+
+#logo {
+  text-align: center;
+  padding: 20px 0px 10px 0px;
+}
+
+.photo_restaurant {
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+  object-position: -20px 0px;
+}
+
+.restaurant {
+  background: #e6e6e6;
+  border-radius: 50px 50px 0 0;
+  padding: 25px;
+}
+.restaurant_nom {
+  position: relative;
+}
+.restaurant_nom_titre {
+  font-family: shrikhand;
+  font-size: 30px;
+}
+.restaurant_nom_favori .far, .restaurant_nom_favori .fa {
+  font-size: 1.5rem;
+  color: black;
+  background: #e6e6e6;
+}
+.restaurant_nom_favori .fas, .restaurant_nom_favori .fa {
+  font-size: 1.5rem;
+  color: transparent;
+  background-image: linear-gradient(to top left, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+}
+.restaurant_nom_favori .far:hover, .restaurant_nom_favori .fa:hover {
+  color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+.restaurant_nom_favori .fas {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.restaurant_nom_favori .far {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+footer {
+  font-family: Roboto-Regular;
+  padding: 20px 20px 20px 30px;
+  background: #333333;
+  color: white;
+}
+footer nav {
+  padding: 20px 0px;
+}
+footer div {
+  margin-bottom: 10px;
+}
+footer .fas, footer .fa {
+  padding: 0 5px 0 0;
+}
+footer a {
+  color: white;
+}
+
+/*# sourceMappingURL=style_a_la_francaise.css.map */

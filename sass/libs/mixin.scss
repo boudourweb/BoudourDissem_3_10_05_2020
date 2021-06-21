@@ -1,0 +1,67 @@
+$bgrd_color: rgb(255, 255, 255);
+@mixin bgrd-color-saturation($saturation: 0) {
+    background: darken($bgrd_color, $saturation);
+    
+}
+
+$bgrd_color_primaire: #9356DC;
+@mixin bgrd-button-saturation($saturation: 0) {
+    background: lighten($bgrd_color_primaire, $saturation);
+    
+}
+
+
+$bgrd_color_tertiaire: #99E2D0;
+@mixin bgrd-nouveau-saturation($saturation: 0) {
+    background: lighten($bgrd_color_tertiaire, $saturation);
+}
+
+@mixin bouton-violet {
+    border-radius: 50px;
+    box-shadow: $box-shadow-bouton;
+    font-family: $font-family-de-base-gras;
+    font-size: 1rem;
+    padding: 15px 30px;
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(to top left, $primaire, $secondaire);
+    cursor: pointer;
+}
+
+@mixin coeur-de-fevori-acceuil{
+    .far, .fa {
+        font-size: 1.5rem;
+        color: rgb(0, 0, 0); 
+        @include bgrd-color-saturation(0);
+    }
+    .fas, .fa {
+        font-size: 1.5rem;
+        color: transparent; 
+        background-image: linear-gradient(to top left, $primaire, $secondaire);
+        -webkit-background-clip: text; 
+    }
+    .far:hover, .fa:hover{
+        color: transparent;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
+
+@mixin coeur-de-fevori-page-restaurant{
+    .far, .fa {
+        font-size: 1.5rem;
+        color: rgb(0, 0, 0); 
+        @include bgrd-color-saturation(10);
+    }
+    .fas, .fa {
+        font-size: 1.5rem;
+        color: transparent; 
+        background-image: linear-gradient(to top left, $primaire, $secondaire);
+        -webkit-background-clip: text; 
+    }
+    .far:hover, .fa:hover{
+        color: transparent;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
