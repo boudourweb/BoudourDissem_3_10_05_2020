@@ -51,7 +51,7 @@ $bgrd_color_tertiaire: #99E2D0;
     .far, .fa {
         font-size: 1.5rem;
         color: rgb(0, 0, 0); 
-        @include bgrd-color-saturation(10);
+        @include bgrd-color-saturation(7);
     }
     .fas, .fa {
         font-size: 1.5rem;

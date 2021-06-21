@@ -102,21 +102,23 @@ p {
 }
 
 .restaurant {
-  background: #e6e6e6;
+  position: relative;
+  top: -70px;
+  background: #ededed;
   border-radius: 50px 50px 0 0;
-  padding: 25px;
+  padding: 40px 20px 25px 20px;
 }
 .restaurant_nom {
   position: relative;
 }
 .restaurant_nom_titre {
   font-family: shrikhand;
-  font-size: 30px;
+  font-size: 2.1rem;
 }
 .restaurant_nom_favori .far, .restaurant_nom_favori .fa {
   font-size: 1.5rem;
   color: black;
-  background: #e6e6e6;
+  background: #ededed;
 }
 .restaurant_nom_favori .fas, .restaurant_nom_favori .fa {
   font-size: 1.5rem;
@@ -131,13 +133,26 @@ p {
 }
 .restaurant_nom_favori .fas {
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 20px;
+  top: 10px;
 }
 .restaurant_nom_favori .far {
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 20px;
+  top: 10px;
+}
+.restaurant_menu {
+  display: flex;
+  flex-direction: column;
+}
+.restaurant_menu_entrees {
+  padding: 30px 0px;
+}
+.restaurant_menu_entrees_1 {
+  background: white;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 footer {
