@@ -5,20 +5,31 @@
 $primaire: #9356DC;
 $secondaire: #FF79DA;
 $tertiaire:#99E2D0;
+$primaire-clair: #9e6bdd;
+$secondaire-clair: #f890db;
+$tertiaire-fonce: #649e90;
+
 $bgrd_color: rgb(255, 255, 255);
 $bgrd_color_primaire: #9356DC;
 $bgrd_color_tertiaire: #99E2D0;
-$box-shadow-bouton: 0px 5px 10px grey;
+$box-shadow-bouton: 0px 5px 15px #d2d2d2;
 
-$font-size-de-titre: 1.4rem;
-$font-size-de-base: 1.2rem;
+$font-size-de-titre: 1.5rem;
+$font-size-de-base: 1.5rem;
 $font-family-de-titre: shrikhand;
 $font-family-de-base: Roboto-Regular;
 $font-family-de-base-gras: Roboto-Bold;
 
+html{
+    font-size: 18px;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
-    font-size: $font-size-de-base;
+}
+
+.loader{
+    @include loader;
 }
 
 h1{
@@ -28,33 +39,51 @@ h1{
 
 h2{
     font-family: $font-family-de-base-gras;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 h3{
     font-family: $font-family-de-base-gras;
+    font-size: 1.5rem;
 }
 
 p{
     font-family: $font-family-de-base;
     font-size: $font-size-de-base;
 }
-
-#logo{
-    text-align: center;
-    padding: 20px 0px 10px 0px; 
+header{
+    position: relative;
+    box-shadow: 0 3px 8px #bababa;
 }
-
+#logo{
+    @include bgrd-color-saturation(0);
+    padding: 25px 0px 15px 0px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    width: 250px;
+}
 .explorer{
     margin: 0 0 40px 0;
     
     &__emplacement{
         @include bgrd-color-saturation(9);
-        padding: 20px 20px;
-        text-align: center;
-        font-family: $font-family-de-base-gras;
-        font-size: 1rem;
+        padding: 20px 140px 20px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        span{    
+            text-align: center;
+            font-family: $font-family-de-base-gras;
+            font-size: 1.4rem;
         }
+        .fas, .fa{
+            font-size: 1.3rem;
+        }
+    }
 
     &__restaurants{
         @include bgrd-color-saturation(5);
@@ -62,11 +91,13 @@ p{
         text-align: center;
         font-family: $font-family-de-base-gras;
         font-size: $font-size-de-base;
+        
         &__bouton{
+            font-size: 1.2rem;
             @include bouton-violet;
         }
         h2{
-           margin: 0 0 20px 0;
+           margin: 0 30px 20px 30px;
         }
         p{
             margin: 0 0 30px 0;
@@ -75,38 +106,40 @@ p{
 }
 
 .fonctionnement{
-    padding: 0px 20px;
+    padding: 0px 30px;
     
     &__boutons{
         display: flex;
         flex-direction: column;
         padding: 20px 0px 50px 0px;
+        
         .fonctionnement__bouton{
             border-radius: 25px;
             box-shadow: $box-shadow-bouton;
             font-family: $font-family-de-base-gras;
-            font-size: 1rem;
-            padding: 25px 20px 25px 20px;
-            margin: 10px 0px;
+            font-size: 1.4rem;
+            padding: 35px 0px 35px 0px;
+            margin: 18px 0px;
             text-align: center;
-            @include bgrd-color-saturation(7);
+            @include bgrd-color-saturation(5);
             position: relative;
             cursor: pointer;
             
             &__icon{
-                font-size: 25px;
+                font-size: 1.5rem;
                 @include bgrd-color-saturation(7);
                 color: rgb(112, 112, 112);
                 position: absolute;
-                left: 40px;
-                top: 22px;
+                left: 50px;
             }
             
             &::after{
                 content: attr(data-number);
                 background-color: $primaire;
-                width: 25px;
-                height: 25px;
+                width: 33px;
+                height: 33px;
+                font-family: $font-family-de-base;
+                font-size: 1.15rem;
                 text-align: center;
                 color: white;
                 border-radius: 50px;
@@ -115,7 +148,7 @@ p{
                 justify-content: center;
                 align-items: center;
                 position: absolute;
-                top: 23px;
+                top: 35px;
                 left:-14px;
             }
                 
@@ -134,70 +167,69 @@ p{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding: 40px 20px 20px 20px;
+    padding: 40px 25px 20px 25px;
     @include bgrd-color-saturation(5);
     &__liste{
+        display: flex;
+        flex-direction: column;
         margin: 20px 0px;
         &__bloc{
-            display: block;
-            position: relative; 
-            bottom: 10px;
-            cursor: pointer;
-            border-radius: 15px;
-            box-shadow: $box-shadow-bouton;
-            margin-bottom: 20px;
-            &__photo{
-                width: 100%;
-                height: 270px;
-                object-fit: cover;
-                border-radius: 15px;
-                object-position: -0px -70px;
-                position: relative;
-            }
-            &__nouveau{
-                color: #489985;
-                @include bgrd-nouveau-saturation(0);
-                position: absolute;
-                top: 20px;
-                right: 20px;
-                padding: 7px 12px;
-                font-family: $font-family-de-base-gras;
-                font-size: 1rem;
-            }
-            &__description{
-                color: black;
-                background: white;
-                border-radius: 0px 0px 15px 15px;
+            position: relative;
+            margin-bottom: 10px;
+            &__carte{
                 display: block;
-                position: absolute;
-                bottom: 0px;
-                width: 100%;
-                padding: 15px 10px 15px 15px;
-                h3{
-                    margin-bottom: 5px;
+                position: relative; 
+                cursor: pointer;
+                border-radius: 15px;
+                box-shadow: $box-shadow-bouton;
+                &__photo{
+                    width: 100%;
+                    height: 335px;
+                    object-fit: cover;
+                    border-radius: 15px;
+                    object-position: 0px -102px;
+                    position: relative;
                 }
-                &_favori{
-                    @include coeur-de-fevori-acceuil;
-                    .fas, .fa {
-                        position: absolute;
-                        right: 30px;
-                        bottom: 30px;
+                &__nouveau{
+                    color: #489985;
+                    @include bgrd-nouveau-saturation(0);
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    padding: 7px 12px;
+                    font-family: $font-family-de-base-gras;
+                    font-size: 1rem;
+                }
+                &__description{
+                    color: black;
+                    background: white;
+                    border-radius: 0px 0px 15px 15px;
+                    display: block;
+                    position: absolute;
+                    bottom: 0px;
+                    width: 100%;
+                    padding: 20px 10px 20px 15px;
+                    h3{
+                        margin-bottom: 5px;
                     }
-    
-                    .far, .fa {
-                        position: absolute;
-                        right: 30px;
-                        bottom: 30px;
-                    }
+                }
+            }    
+            &__favori{
+                
+                @include coeur-de-fevori;
+                .far, .fas, .fa {
+                    position: absolute;
+                    bottom: 60px;
+                    right: 40px;
                 }
             }
         }
     }
 }
 
-
 footer{
     font-family: $font-family-de-base;
+    font-size: 1.3rem;
     padding: 20px 20px 20px 30px;
     @include bgrd-color-saturation(80);
     color: white;
@@ -213,5 +245,29 @@ footer{
     a{
         color: white;
     }
-    
+}
+@media screen and (max-width: 400px){
+    html{
+        font-size: 12px;
+    }
+
+}
+@media screen and (min-width: 400px) and (max-width: 500px){
+
+}
+@media screen and (min-width: 600px) and (max-width: 768px){
+
+}
+
+/*Tablette*/
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+}
+/*grand ecran*/
+@media screen and (min-width: 992px) and (max-width: 1200px){
+
+}
+
+@media screen and (min-width: 1200px){
+
 }

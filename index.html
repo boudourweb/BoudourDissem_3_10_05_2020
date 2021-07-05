@@ -7,6 +7,35 @@
     <title>ohmyfood</title>
 </head>
 <body>
+    <div class="loader">
+        <div class="loader_circle">
+        </div>
+        <div class="loader_loading">
+            <span class="lettre">
+                L
+            </span>
+            <span class="lettre">
+                o
+            </span>
+            <span class="lettre">
+                a
+            </span>
+            <span class="lettre">
+                d
+            </span>
+            <span class="lettre">
+                i
+            </span>
+            <span class="lettre">
+                n
+            </span>
+            <span class="lettre">
+                g
+            </span>
+        </div>
+        
+    </div>
+
     <header>
         <div id="logo">
             <img class="logo" src="img/logo/ohmyfood@2x.svg" alt="logo">
@@ -52,92 +81,104 @@
             <h2>Restaurants</h2>
             
             <div class="restaurants__liste">
-                <a href="la_palette_du_gout.html" class="restaurants__liste__bloc">
-                    <img class="restaurants__liste__bloc__photo" src="img/restaurants/La palette du goût.jpg" alt="La palette du goût">
-                    <p class="restaurants__liste__bloc__nouveau">Nouveau</p>
-                    <div class="restaurants__liste__bloc__description">
-                        <h3>
-                            La palette du goût
-                        </h3>
-                        <div class="restaurants__liste__bloc__description_favori">
+                <div class="restaurants__liste__bloc">
+                    <a href="la_palette_du_gout.html" class="restaurants__liste__bloc__carte">
+                        <img class="restaurants__liste__bloc__carte__photo" src="img/restaurants/La palette du goût.jpg" alt="La palette du goût">
+                        <p class="restaurants__liste__bloc__carte__nouveau">Nouveau</p>
+                        <div class="restaurants__liste__bloc__carte__description">
+                            <h3>
+                                La palette du goût
+                            </h3>
+                            <p>
+                                Ménilmontant
+                            </p>
+                        </div>
+                    </a>
+                    <button type="button"  class="restaurants__liste__bloc__favori">
+                        <div class="restaurants__liste__bloc__favori__coeurs">
                             <i class="fas fa-heart"></i>
                             <i class="far fa-heart"></i>
                         </div>
-                        <p>
-                            Ménilmontant
-                        </p>
-                    </div>
-                </a>
-                <a href="" class="restaurants__liste__bloc">
-                    <img class="restaurants__liste__bloc__photo" src="img/restaurants/La note enchantée.jpg" alt="La note enchantée">
-                    <p class="restaurants__liste__bloc__nouveau">Nouveau</p>
-                    <div class="restaurants__liste__bloc__description">
-                        <h3>
-                            La note enchantée
-                        </h3>
-                        <div class="restaurants__liste__bloc__description_favori">
+                    </button>
+                </div>
+                <div class="restaurants__liste__bloc">
+                    <a href="" class="restaurants__liste__bloc__carte">
+                        <img class="restaurants__liste__bloc__carte__photo" src="img/restaurants/La note enchantée.jpg" alt="La note enchantée">
+                        <p class="restaurants__liste__bloc__carte__nouveau">Nouveau</p>
+                        <div class="restaurants__liste__bloc__carte__description">
+                            <h3>
+                                La note enchantée
+                            </h3>
+                            <p>
+                                Charonne
+                            </p>
+                        </div>
+                    </a>
+                    <button type="button"  class="restaurants__liste__bloc__favori">
+                        <div class="restaurants__liste__bloc__favori__coeurs">
                             <i class="fas fa-heart"></i>
                             <i class="far fa-heart"></i>
                         </div>
-                        <p>
-                            Charonne
-                        </p>
-                    </div>
-                </a>
-                <a href="" class="restaurants__liste__bloc">
-                    <img class="restaurants__liste__bloc__photo" src="img/restaurants/A la française.jpg" alt="à la française">
-                    <div class="restaurants__liste__bloc__description">
-                        <h3>
-                            à la française
-                        </h3>
-                        <div class="restaurants__liste__bloc__description_favori">
+                    </button>
+                </div>
+                <div class="restaurants__liste__bloc">
+                    <a href="A_la_francaise.html" class="restaurants__liste__bloc__carte">
+                        <img class="restaurants__liste__bloc__carte__photo" src="img/restaurants/A la française.jpg" alt="à la française">
+                        <div class="restaurants__liste__bloc__carte__description">
+                            <h3>
+                                à la française
+                            </h3>
+                             <p>
+                                Cité Rouge
+                            </p>
+                        </div>
+                    </a>
+                    <button type="button"  class="restaurants__liste__bloc__favori">
+                        <div class="restaurants__liste__bloc__favori__coeurs">
                             <i class="fas fa-heart"></i>
                             <i class="far fa-heart"></i>
                         </div>
-                        <p>
-                            Cité Rouge
-                        </p>
-                    </div>
-                </a>
-                <a href="" class="restaurants__liste__bloc">
-                    <img class="restaurants__liste__bloc__photo" src="img/restaurants/Le délice des sens.jpg" alt="Le délice des sens">
-                    <div class="restaurants__liste__bloc__description">
-                        <h3>
-                            Le délice des sens
-                        </h3>
-                        <button class="favori">
-                            <div class="restaurants__liste__bloc__description_favori">
-                                <i class="fas fa-heart"></i>
-                                <i class="far fa-heart"></i>
-                            </div>
-                        </button>
-                        <p>
-                            Folie-Méricourt
-                        </p>
-                    </div>
-                </a>
+                    </button>
+                </div>
+                <div class="restaurants__liste__bloc">
+                    <a href="" class="restaurants__liste__bloc__carte">
+                        <img class="restaurants__liste__bloc__carte__photo" src="img/restaurants/Le délice des sens.jpg" alt="Le délice des sens">
+                        <div class="restaurants__liste__bloc__carte__description">
+                            <h3>
+                                Le délice des sens
+                            </h3>
+                            <p>
+                                Folie-Méricourt
+                            </p>
+                        </div>
+                    </a>
+                    <button type="button"  class="restaurants__liste__bloc__favori">
+                        <div class="restaurants__liste__bloc__favori__coeurs">
+                            <i class="fas fa-heart"></i>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </button>
+                </div>
             </div>
         </section>
-        
     </main>
     <FOOter>
         <H1>ohmyfood</H1>
         <NAV>
             <div>
                 <i class="fas fa-utensils"></i>
-                <a href="">Proposer un restaurant</a>
+                <a href= "">Proposer un restaurant</a>
             </div>
             <div>
                 <i class="fas fa-hands-helping"></i>
-                <a href="">Devenir partenaire</a>
+                <a href= "">Devenir partenaire</a>
             </div>
             <div>
-                <a href="">Mentions légales</a>
+                <a href= "">Mentions légales</a>
             </div>
             <div>
-                <a href="">Contact</a>
+                <a href="mailto:">Contact</a>
             </div>
-            
         </NAV>
     </FOOter>
 <script src="https://kit.fontawesome.com/de2ea486d7.js" crossorigin="anonymous"></script>    
