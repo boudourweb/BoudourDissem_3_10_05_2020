@@ -77,16 +77,17 @@ body {
 
 h1 {
   font-family: shrikhand;
-  font-size: 1.5rem;
+  font-size: 2.4rem;
 }
 
 h2 {
   font-family: Roboto-Bold;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 h3 {
-  font-family: Roboto-Bold;
+  font-family: shrikhand;
+  font-size: 1.5rem;
 }
 
 p {
@@ -123,16 +124,20 @@ main {
 
 .restaurant_photo {
   width: 100%;
+  height: 24rem;
+}
+.restaurant_photo_img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 .restaurant {
   position: relative;
-  top: -70px;
+  top: -52px;
   background: #ededed;
   border-radius: 50px 50px 0 0;
-  padding: 40px 10px 25px 10px;
+  padding: 30px 10px 25px 10px;
 }
 .restaurant_nom {
   position: relative;
@@ -150,19 +155,14 @@ main {
 .restaurant_nom_favori .far, .restaurant_nom_favori .fa {
   font-size: 2rem;
   color: black;
-  background: #ededed;
 }
-.restaurant_nom_favori .fas, .restaurant_nom_favori .fa {
-  font-size: 2rem;
+.restaurant_nom_favori .far:hover, .restaurant_nom_favori .fa:hover, .restaurant_nom_favori .far:active, .restaurant_nom_favori .fa:active {
   color: transparent;
+  font-weight: 900;
   background-image: linear-gradient(to top left, #9356DC, #FF79DA);
   -webkit-background-clip: text;
   background-clip: text;
-}
-.restaurant_nom_favori .far:hover, .restaurant_nom_favori .fa:hover, .restaurant_nom_favori .far:focus, .restaurant_nom_favori .fa:focus {
-  color: transparent;
-  background-color: transparent;
-  transition: background-color 1s;
+  transition: all 1s;
 }
 .restaurant_nom_favori .fas, .restaurant_nom_favori .far {
   position: absolute;
@@ -247,7 +247,6 @@ main {
   padding: 1rem;
 }
 .restaurant_menu_entrees_carte_nom h3 {
-  font-size: 1.5rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -277,10 +276,10 @@ main {
 .restaurant_menu_entrees_carte_check_icon {
   color: #99E2D0;
   background-color: white;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 5rem;
-  margin: 1.3rem;
+  font-size: 1.5rem;
+  border-radius: 15rem;
+  margin: 1.6rem;
+  padding: 0.4rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -362,7 +361,6 @@ main {
   padding: 1rem;
 }
 .restaurant_menu_plats_carte_nom h3 {
-  font-size: 1.5rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -392,10 +390,10 @@ main {
 .restaurant_menu_plats_carte_check_icon {
   color: #99E2D0;
   background-color: white;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 5rem;
-  margin: 1.3rem;
+  font-size: 1.5rem;
+  border-radius: 15rem;
+  margin: 1.6rem;
+  padding: 0.4rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -477,7 +475,6 @@ main {
   padding: 1rem;
 }
 .restaurant_menu_desserts_carte_nom h3 {
-  font-size: 1.5rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -507,10 +504,10 @@ main {
 .restaurant_menu_desserts_carte_check_icon {
   color: #99E2D0;
   background-color: white;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 5rem;
-  margin: 1.3rem;
+  font-size: 1.5rem;
+  border-radius: 15rem;
+  margin: 1.6rem;
+  padding: 0.4rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -589,6 +586,11 @@ footer a {
   .restaurant {
     padding: 4rem 14rem 2rem 14rem;
   }
+
+  footer nav {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 @media screen and (min-width: 1200px) {
   html {
@@ -597,6 +599,11 @@ footer a {
 
   .restaurant {
     padding: 4rem 14rem 2rem 14rem;
+  }
+
+  footer nav {
+    display: flex;
+    justify-content: space-between;
   }
 }
 

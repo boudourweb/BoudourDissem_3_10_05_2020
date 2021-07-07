@@ -264,6 +264,12 @@ header {
   font-family: Roboto-Bold;
   font-size: 1.6rem;
 }
+.explorer__restaurants h1 {
+  margin: 0 30px 20px 30px;
+}
+.explorer__restaurants p {
+  margin: 10px 0 30px 0;
+}
 .explorer__restaurants__bouton {
   width: 70%;
   font-size: 1.4rem;
@@ -279,12 +285,6 @@ header {
 .explorer__restaurants__bouton:hover {
   box-shadow: 0px 5px 15px #979797;
   background-image: linear-gradient(to top left, #9e6bdd, #f890db);
-}
-.explorer__restaurants h2 {
-  margin: 0 30px 20px 30px;
-}
-.explorer__restaurants p {
-  margin: 10px 0 30px 0;
 }
 
 .fonctionnement {
@@ -389,8 +389,11 @@ header {
   width: 100%;
   padding: 1.5rem 1rem 1.5rem 1rem;
 }
-.restaurants__liste__bloc__carte__description h3 {
+.restaurants__liste__bloc__carte__description h2 {
   margin-bottom: 5px;
+}
+.restaurants__liste__bloc__carte__description h2 span {
+  text-transform: uppercase;
 }
 .restaurants__liste__bloc__favori {
   cursor: pointer;
@@ -398,19 +401,14 @@ header {
 .restaurants__liste__bloc__favori .far, .restaurants__liste__bloc__favori .fa {
   font-size: 2rem;
   color: black;
-  background: white;
-}
-.restaurants__liste__bloc__favori .fas, .restaurants__liste__bloc__favori .fa {
-  font-size: 2rem;
-  color: transparent;
-  background-image: linear-gradient(to top left, #9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  background-clip: text;
 }
 .restaurants__liste__bloc__favori .far:hover, .restaurants__liste__bloc__favori .fa:hover, .restaurants__liste__bloc__favori .far:active, .restaurants__liste__bloc__favori .fa:active {
   color: transparent;
-  background-color: transparent;
-  transition: background-color 1s;
+  font-weight: 900;
+  background-image: linear-gradient(to top left, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: all 1s;
 }
 .restaurants__liste__bloc__favori .far, .restaurants__liste__bloc__favori .fas, .restaurants__liste__bloc__favori .fa {
   position: absolute;
@@ -530,6 +528,11 @@ footer a {
   .fonctionnement__boutons .fonctionnement__bouton__icon {
     left: 2rem;
   }
+
+  footer nav {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 @media screen and (min-width: 900px) and (max-width: 992px) and (min-width: 954px) and (max-width: 992px) {
   html {
@@ -574,6 +577,11 @@ footer a {
   .fonctionnement__boutons .fonctionnement__bouton__icon {
     left: 2rem;
   }
+
+  footer nav {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 @media screen and (min-width: 1200px) {
   html {
@@ -612,6 +620,11 @@ footer a {
   }
   .fonctionnement__boutons .fonctionnement__bouton__icon {
     left: 2rem;
+  }
+
+  footer nav {
+    display: flex;
+    justify-content: space-between;
   }
 }
 

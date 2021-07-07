@@ -4,13 +4,10 @@ $bgrd_color: rgb(255, 255, 255);
     
 }
 
-
 $bgrd_color_primaire: #9356DC;
 @mixin bgrd-button-saturation($saturation: 0) {
     background: lighten($bgrd_color_primaire, $saturation);
-    
 }
-
 
 $bgrd_color_tertiaire: #99E2D0;
 @mixin bgrd-nouveau-saturation($saturation: 0) {
@@ -33,55 +30,25 @@ $bgrd_color_tertiaire: #99E2D0;
         background-image: linear-gradient(to top left, $primaire-clair, $secondaire-clair);
     }
 }
-
 @mixin coeur-de-fevori{
     cursor: pointer;
     .far, .fa {
         font-size: 2rem;
-        color: rgb(0, 0, 0); 
-        @include bgrd-color-saturation(0);
-    }
-    .fas, .fa {
-        font-size: 2rem;
-        color: transparent; 
-        background-image: linear-gradient(to top left, $primaire, $secondaire);
-        -webkit-background-clip: text; 
-        background-clip: text;
+        color: black; 
     }
     .far:hover, .fa:hover, .far:active, .fa:active{
         color: transparent;
-        background-color: transparent;
-        transition: background-color 1s;
-    }
-}
-
-@mixin coeur-de-fevori-page-restaurant{
-    cursor: pointer;
-    
-    .far, .fa {
-        font-size: 2rem;
-        color: rgb(0, 0, 0); 
-        @include bgrd-color-saturation(7);
-    }
-    .fas, .fa {
-        font-size: 2rem;
-        color: transparent; 
+        font-weight: 900;
         background-image: linear-gradient(to top left, $primaire, $secondaire);
         -webkit-background-clip: text; 
         background-clip: text;
-        
-    }
-    .far:hover, .fa:hover, .far:focus, .fa:focus{
-        color: transparent; 
-        background-color: transparent;
-        transition: background-color 1s;
+        transition: all 1s;
     }
 }
 
-
 @mixin les-cartes {
-
     padding: 25px 0px 0px 0px;
+    
     &_type{
         margin-bottom: 20px;
         padding: 0 0 0 5px;
@@ -98,8 +65,8 @@ $bgrd_color_tertiaire: #99E2D0;
     }
     &_carte{
         @include transition_progressive;
-        
         @include bgrd-color-saturation(0);
+        
         width: 100%;
         height: auto;
         border-radius: 1.2rem;
@@ -107,13 +74,9 @@ $bgrd_color_tertiaire: #99E2D0;
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
-        
         overflow: hidden;
-    
-  
         
         /* animation pour les entrées*/
-        
         &:hover > .restaurant_menu_entrees_carte_check{
             background-color: $bgrd_color_tertiaire;
             width: 100px;
@@ -121,9 +84,7 @@ $bgrd_color_tertiaire: #99E2D0;
                 transform: rotate(0deg);
             }
         }
-        
         /* animation pour les platss*/
-        
         &:hover > .restaurant_menu_plats_carte_check{
             background-color: $bgrd_color_tertiaire;
             width: 100px;
@@ -131,9 +92,7 @@ $bgrd_color_tertiaire: #99E2D0;
                 transform: rotate(0deg);
             }
         }
-
         /* animation pour les desserts*/
-        
         &:hover > .restaurant_menu_desserts_carte_check{
             background-color: $bgrd_color_tertiaire;
             width: 100px;
@@ -146,13 +105,11 @@ $bgrd_color_tertiaire: #99E2D0;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
-            
             width: 100%;
             height: 100%;
             padding: 1rem;           
+            
             h3{
-                
-                font-size: $font-size-de-titre;
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
@@ -163,7 +120,6 @@ $bgrd_color_tertiaire: #99E2D0;
                 white-space: nowrap;
                 text-overflow: ellipsis;
             }   
-            
         }
         &_prix{
             font-family: $font-family-de-base-gras;
@@ -176,27 +132,23 @@ $bgrd_color_tertiaire: #99E2D0;
             background-color: $bgrd_color_tertiaire;
             width: 0px;
             height: 100%;
-            
             overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
-            
             transition: all 0.5s ease-in;
             
             &_icon{
                 color: $tertiaire;
                 background-color: white;
-                width: 3rem;
-                height: 3rem;
-                border-radius: 5rem;
-                margin: 1.3rem;
-
+                font-size: 1.5rem;
+                border-radius: 15rem;
+                margin: 1.6rem;
+                padding: 0.4rem;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
-            
                 transform: rotate(360deg);
                 transition: transform 0.5s ease-in;
             }

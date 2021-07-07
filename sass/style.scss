@@ -44,7 +44,7 @@ h2{
 }
 h3{
     font-family: $font-family-de-titre;
-    font-size: 1.6rem;
+    font-size: $font-size-de-base;
 }
 p{
     font-family: $font-family-de-base;
@@ -95,17 +95,16 @@ header{
         text-align: center;
         font-family: $font-family-de-base-gras;
         font-size: $font-size-de-base;
-        
+        h1{
+            margin: 0 30px 20px 30px;
+         }
+         p{
+             margin: 10px 0 30px 0;
+         }
         &__bouton{
             width: 70%;
             font-size: 1.4rem;
             @include bouton-violet;
-        }
-        h2{
-           margin: 0 30px 20px 30px;
-        }
-        p{
-            margin: 10px 0 30px 0;
         }
     }
 }
@@ -213,8 +212,11 @@ header{
                     bottom: 0px;
                     width: 100%;
                     padding: 1.5rem 1rem 1.5rem 1rem;
-                    h3{
+                    h2{
                         margin-bottom: 5px;
+                        span{
+                            text-transform: uppercase; 
+                        }
                     }
                 }
             }    
@@ -348,6 +350,12 @@ footer{
             }
         }
     }
+    footer{
+        nav{ 
+            display: flex;
+            justify-content: space-between;
+        }
+    }
     @media screen and (min-width: 954px) and (max-width: 992px){
         html{
             font-size: 15px;
@@ -394,47 +402,58 @@ footer{
             }
         }
     }
+    footer{
+        nav{ 
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 
 }
 @media screen and (min-width: 1200px) {
     html{
     font-size: 16px;
 }
-.restaurants{
-    padding: 40px 15px 20px 15px;
-    &__liste{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        
-        &__bloc{
-            width: 24%;
-            margin: 0 0.25rem 0.5rem 0.25rem;
-        }
-    }
-}
-.fonctionnement{
-    padding: 0px 15px 0px 20px;
-    
-    &__boutons{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 20px 0px 50px 0px;
-        
-        .fonctionnement__bouton{
+    .restaurants{
+        padding: 40px 15px 20px 15px;
+        &__liste{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
             
-            font-size: 1.2rem;
-            padding: 2.3rem 2rem 2.3rem 4rem;
-            margin: 11px 13px;
-            text-align: right;
-            &__icon{
-                left: 2rem;
+            &__bloc{
+                width: 24%;
+                margin: 0 0.25rem 0.5rem 0.25rem;
             }
         }
     }
-}
-
+    .fonctionnement{
+        padding: 0px 15px 0px 20px;
+        
+        &__boutons{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px 0px 50px 0px;
+            
+            .fonctionnement__bouton{
+                
+                font-size: 1.2rem;
+                padding: 2.3rem 2rem 2.3rem 4rem;
+                margin: 11px 13px;
+                text-align: right;
+                &__icon{
+                    left: 2rem;
+                }
+            }
+        }
+    }
+    footer{
+        nav{ 
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 }
