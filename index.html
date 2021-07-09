@@ -7,7 +7,7 @@
     <title>ohmyfood</title>
 </head>
 <body>
-    <div class="loader">
+    <div class="loader">                                <!--------------------  Le loader----------------->
         <div class="loader_circle">
         </div>
         <div class="loader_loading">
@@ -35,14 +35,13 @@
         </div>
         
     </div>
-
-    <header>
+    <header>                                            <!--------------------  Le header----------------->
         <div id="logo">
             <img class="logo" src="img/logo/ohmyfood@2x.svg" alt="logo">
         </div>
     </header>
-    <main>
-        <section class= "explorer">
+    <main>                                              <!--------------------  Le main------------------->
+        <section class= "explorer">                         <!--------------------  Section Explorer---------->
             <div class="explorer__emplacement">
                 <i class="fas fa-map-marker-alt"></i>
                 <span>Paris, Belleville</span>
@@ -57,31 +56,27 @@
                 </div>
             </div>
         </section>
-        <section class="fonctionnement">
+        <section class="fonctionnement">                    <!--------------------  Section fonctionnement---->
             <h1>Fonctionnement</h1>
-            <div class="fonctionnement__boutons">
-                <button class="fonctionnement__bouton" data-number="1" >
+            <div class="fonctionnement__boutons">                       
+                <button class="fonctionnement__bouton" data-number="1" >    <!--------------------  Bouton choisir restaurant-------->
                     <i class="fas fonctionnement__bouton__icon fa-mobile-alt"></i>
                     Choisissez un restaurant
                 </button>
-            
-                <button class="fonctionnement__bouton" data-number="2"> 
+                <button class="fonctionnement__bouton" data-number="2">     <!--------------------  Bouton composer menu-------------> 
                     <i class="fas fonctionnement__bouton__icon fa-list-ul"></i>
                     Composez votre menu
                 </button>
-            
-                <button class="fonctionnement__bouton" data-number="3"> 
+                <button class="fonctionnement__bouton" data-number="3">     <!--------------------  Bouton déguster au restaurant----> 
                     <i class="fas fonctionnement__bouton__icon fa-store"></i>
                     Dégustez au restaurant
                 </button>
             </div>
-
         </section>
-        <section class="restaurants">
+        <section class="restaurants">                       <!--------------------  Section Restaurants------->
             <h1>Restaurants</h1>
-            
-            <div class="restaurants__liste">
-                <div class="restaurants__liste__bloc">
+            <div class="restaurants__liste">                        <!-----------liste des cartes restaurants + bouton coeur---->
+                <div class="restaurants__liste__bloc">                      <!--------------------  carte restaurant + bouton coeur---->
                     <a href="la_palette_du_gout.html" class="restaurants__liste__bloc__carte">
                         <img class="restaurants__liste__bloc__carte__photo" src="img/restaurants/La palette du goût.jpg" alt="La palette du goût">
                         <p class="restaurants__liste__bloc__carte__nouveau">Nouveau</p>
@@ -100,7 +95,7 @@
                         </div>
                     </button>
                 </div>
-                <div class="restaurants__liste__bloc">
+                <div class="restaurants__liste__bloc">                      <!--------------------  carte restaurant + bouton coeur---->
                     <a href="la_note_enchantée.html" class="restaurants__liste__bloc__carte">
                         <img class="restaurants__liste__bloc__carte__photo" src="img/restaurants/La note enchantée.jpg" alt="La note enchantée">
                         <p class="restaurants__liste__bloc__carte__nouveau">
@@ -121,7 +116,7 @@
                         </div>
                     </button>
                 </div>
-                <div class="restaurants__liste__bloc">
+                <div class="restaurants__liste__bloc">                      <!--------------------  carte restaurant + bouton coeur---->
                     <a href="A_la_francaise.html" class="restaurants__liste__bloc__carte">
                         <img class="restaurants__liste__bloc__carte__photo" src="img/restaurants/A la française.jpg" alt="à la française">
                         <div class="restaurants__liste__bloc__carte__description">
@@ -139,7 +134,7 @@
                         </div>
                     </button>
                 </div>
-                <div class="restaurants__liste__bloc">
+                <div class="restaurants__liste__bloc">                      <!--------------------  carte restaurant + bouton coeur---->
                     <a href="le_delice_des_sens.html" class="restaurants__liste__bloc__carte">
                         <img class="restaurants__liste__bloc__carte__photo" src="img/restaurants/Le délice des sens.jpg" alt="Le délice des sens">
                         <div class="restaurants__liste__bloc__carte__description">
@@ -160,25 +155,25 @@
             </div>
         </section>
     </main>
-    <FOOter>
+    <footer>                                            <!--------------------  Le footer----------------->
         <h3>ohmyfood</h3>
         <NAV>
-            <div>
+            <a href= "">
                 <i class="fas fa-utensils"></i>
-                <a href= "">Proposer un restaurant</a>
-            </div>
-            <div>
+                Proposer un restaurant
+            </a>
+            <a href= "">
                 <i class="fas fa-hands-helping"></i>
-                <a href= "">Devenir partenaire</a>
-            </div>
-            <div>
-                <a href= "">Mentions légales</a>
-            </div>
-            <div>
-                <a href="mailto:">Contact</a>
-            </div>
+                Devenir partenaire
+            </a>
+            <a href= "">
+                Mentions légales
+            </a>
+            <a href="mailto:">
+                Contact
+            </a>
         </NAV>
-    </FOOter>
+    </footer>
 <script src="https://kit.fontawesome.com/de2ea486d7.js" crossorigin="anonymous"></script>    
 </body>
 </html>

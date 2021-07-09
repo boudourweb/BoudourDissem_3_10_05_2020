@@ -251,18 +251,17 @@ footer{
     color: white;
     nav{ 
         padding: 20px 0px;
-    }
-    div{
-        font-family: $font-family-de-base;
-        font-size: 1.4rem;
-        margin-bottom: 10px;
-    }
-    .fas, .fa{
-        padding: 0 5px 0 0;
-    }
-    a{
-        
-        color: white;
+        display: flex;
+        flex-direction: column;
+        a{
+            font-family: $font-family-de-base;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: white;
+            .fas, .fa{
+                padding: 0 5px 0 0;
+            }
+        }
     }
 }
 @media screen and (min-width: 400px) and (max-width: 500px){
@@ -274,15 +273,36 @@ footer{
     html{
         font-size: 14px;
     }
+    .explorer{
+        &__restaurants{
+            &__bouton{
+                width: 300px;
+            }
+        }
+    }
 }
 @media screen and (min-width: 600px) and (max-width: 700px){
     html{
         font-size: 16px;
     }
+    .explorer{
+        &__restaurants{
+            &__bouton{
+                width: 300px;
+            }
+        }
+    }
 }
 @media screen and (min-width: 700px) and (max-width: 900px){
     html{
         font-size: 16px;
+    }
+    .explorer{
+        &__restaurants{
+            &__bouton{
+                width: 300px;
+            }
+        }
     }
     .restaurants{
         padding: 40px 15px 20px 15px;
@@ -322,21 +342,29 @@ footer{
     }
     footer{    
         padding: 35px 20px 20px 40px;
-       nav{ 
-        padding: 30px 0px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        }
-        div{
-            width: 50%;
-            margin-bottom: 20px;
+        nav{ 
+            padding: 30px 0px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-direction: row;
+            a{
+                width: 50%;
+                margin-bottom: 20px;
+            }
         }
     }
 }
 @media screen and (min-width: 900px) and (max-width: 992px){
     html{
         font-size: 14px;
+    }
+    .explorer{
+        &__restaurants{
+            &__bouton{
+                width: 300px;
+            }
+        }
     }
     .restaurants{
         padding: 40px 15px 20px 15px;
@@ -379,6 +407,7 @@ footer{
         nav{ 
             display: flex;
             justify-content: space-between;
+            flex-direction: row;
             padding: 30px 35px 30px 0;
         }
     }
@@ -391,6 +420,13 @@ footer{
 @media screen and (min-width: 992px) and (max-width: 1200px){
     html{
         font-size: 16px;
+    }
+    .explorer{
+        &__restaurants{
+            &__bouton{
+                width: 300px;
+            }
+        }
     }
     .restaurants{
         padding: 40px 15px 20px 15px;
@@ -434,13 +470,20 @@ footer{
             padding: 30px 0 30px 0;
             display: flex;
             justify-content: space-between;
+            flex-direction: row;
         }
     }
-
 }
 @media screen and (min-width: 1200px) {
     html{
     font-size: 16px;
+}
+.explorer{
+    &__restaurants{
+        &__bouton{
+            width: 300px;
+        }
+    }
 }
     .restaurants{
         padding: 40px 15px 20px 15px;
@@ -484,6 +527,7 @@ footer{
             padding: 30px 0 30px 0;
             display: flex;
             justify-content: space-between;
+            flex-direction: row;
         }
     }
 }

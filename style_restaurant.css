@@ -194,6 +194,8 @@ main {
   opacity: 0 3s ease-in;
   transition: all 0.5s ease-in-out;
   animation: translate 1s ease-in-out;
+  -webkit-animation: translate 1s ease-in-out;
+  -o-animation: translate 1s ease-in-out;
   background: white;
   width: 100%;
   height: auto;
@@ -208,6 +210,16 @@ main {
   /* animation pour les desserts*/
 }
 @keyframes translate {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes translate {
   0% {
     transform: translateY(20%);
     opacity: 0;
@@ -308,6 +320,8 @@ main {
   opacity: 0 3s ease-in;
   transition: all 0.5s ease-in-out;
   animation: translate 1s ease-in-out;
+  -webkit-animation: translate 1s ease-in-out;
+  -o-animation: translate 1s ease-in-out;
   background: white;
   width: 100%;
   height: auto;
@@ -322,6 +336,16 @@ main {
   /* animation pour les desserts*/
 }
 @keyframes translate {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes translate {
   0% {
     transform: translateY(20%);
     opacity: 0;
@@ -422,6 +446,8 @@ main {
   opacity: 0 3s ease-in;
   transition: all 0.5s ease-in-out;
   animation: translate 1s ease-in-out;
+  -webkit-animation: translate 1s ease-in-out;
+  -o-animation: translate 1s ease-in-out;
   background: white;
   width: 100%;
   height: auto;
@@ -436,6 +462,16 @@ main {
   /* animation pour les desserts*/
 }
 @keyframes translate {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes translate {
   0% {
     transform: translateY(20%);
     opacity: 0;
@@ -539,23 +575,23 @@ main {
 }
 
 footer {
-  font-family: Roboto-Regular;
-  font-size: 1.3rem;
   padding: 20px 20px 20px 30px;
   background: #333333;
   color: white;
 }
 footer nav {
   padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
 }
-footer div {
+footer nav a {
+  font-family: Roboto-Regular;
+  font-size: 1.4rem;
   margin-bottom: 10px;
-}
-footer .fas, footer .fa {
-  padding: 0 5px 0 0;
-}
-footer a {
   color: white;
+}
+footer nav a .fas, footer nav a .fa {
+  padding: 0 5px 0 0;
 }
 
 @media screen and (min-width: 400px) and (max-width: 500px) {
@@ -577,6 +613,21 @@ footer a {
   html {
     font-size: 18px;
   }
+
+  footer {
+    padding: 35px 20px 20px 40px;
+  }
+  footer nav {
+    padding: 30px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  footer nav a {
+    width: 50%;
+    margin-bottom: 20px;
+  }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   html {
@@ -588,12 +639,13 @@ footer a {
   }
 
   footer {
-    padding: 31px 28px 20px 36px;
+    padding: 31px 77px 20px 36px;
   }
   footer nav {
+    padding: 30px 0 30px 0;
     display: flex;
     justify-content: space-between;
-    padding: 30px 35px 30px 0;
+    flex-direction: row;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -606,12 +658,13 @@ footer a {
   }
 
   footer {
-    padding: 31px 28px 20px 36px;
+    padding: 31px 77px 20px 36px;
   }
   footer nav {
+    padding: 30px 0 30px 0;
     display: flex;
     justify-content: space-between;
-    padding: 30px 35px 30px 0;
+    flex-direction: row;
   }
 }
 
