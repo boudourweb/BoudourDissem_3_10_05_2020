@@ -334,6 +334,7 @@ header {
 }
 .fonctionnement__boutons .fonctionnement__bouton:hover {
   background: #f2eafb;
+  transform: scale(1.05);
 }
 .fonctionnement__boutons .fonctionnement__bouton:hover:hover .fas {
   color: #9356DC;
@@ -355,12 +356,18 @@ header {
   position: relative;
   margin-bottom: 10px;
 }
+.restaurants__liste__bloc:hover {
+  transform: translate(2px, -2px);
+}
 .restaurants__liste__bloc__carte {
   display: block;
   position: relative;
   cursor: pointer;
   border-radius: 15px;
   box-shadow: 0px 5px 15px #d2d2d2;
+}
+.restaurants__liste__bloc__carte:hover {
+  box-shadow: 0 0 15px #9356DC;
 }
 .restaurants__liste__bloc__carte__photo {
   width: 100%;
@@ -489,6 +496,20 @@ footer a {
   .fonctionnement__boutons .fonctionnement__bouton__icon {
     left: 2rem;
   }
+
+  footer {
+    padding: 35px 20px 20px 40px;
+  }
+  footer nav {
+    padding: 30px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  footer div {
+    width: 50%;
+    margin-bottom: 20px;
+  }
 }
 @media screen and (min-width: 900px) and (max-width: 992px) {
   html {
@@ -529,9 +550,13 @@ footer a {
     left: 2rem;
   }
 
+  footer {
+    padding: 31px 28px 20px 36px;
+  }
   footer nav {
     display: flex;
     justify-content: space-between;
+    padding: 30px 35px 30px 0;
   }
 }
 @media screen and (min-width: 900px) and (max-width: 992px) and (min-width: 954px) and (max-width: 992px) {
@@ -578,7 +603,11 @@ footer a {
     left: 2rem;
   }
 
+  footer {
+    padding: 31px 77px 20px 36px;
+  }
   footer nav {
+    padding: 30px 0 30px 0;
     display: flex;
     justify-content: space-between;
   }
@@ -622,7 +651,11 @@ footer a {
     left: 2rem;
   }
 
+  footer {
+    padding: 31px 77px 20px 36px;
+  }
   footer nav {
+    padding: 30px 0 30px 0;
     display: flex;
     justify-content: space-between;
   }

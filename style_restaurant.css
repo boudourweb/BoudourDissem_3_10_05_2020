@@ -587,9 +587,13 @@ footer a {
     padding: 4rem 14rem 2rem 14rem;
   }
 
+  footer {
+    padding: 31px 28px 20px 36px;
+  }
   footer nav {
     display: flex;
     justify-content: space-between;
+    padding: 30px 35px 30px 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -601,9 +605,13 @@ footer a {
     padding: 4rem 14rem 2rem 14rem;
   }
 
+  footer {
+    padding: 31px 28px 20px 36px;
+  }
   footer nav {
     display: flex;
     justify-content: space-between;
+    padding: 30px 35px 30px 0;
   }
 }
 
