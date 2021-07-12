@@ -66,7 +66,7 @@ $bgrd_color_tertiaire: #99E2D0;
     &_carte{
         @include transition_progressive;
         @include bgrd-color-saturation(0);
-        
+        cursor: pointer;
         width: 100%;
         height: auto;
         border-radius: 1.2rem;
@@ -76,7 +76,7 @@ $bgrd_color_tertiaire: #99E2D0;
         justify-content: space-between;
         overflow: hidden;
         
-        /* animation pour les entrées*/
+        /* animation en hover pour les entrées*/
         &:hover > .restaurant_menu_entrees_carte_check{
             background-color: $bgrd_color_tertiaire;
             width: 100px;
@@ -84,7 +84,7 @@ $bgrd_color_tertiaire: #99E2D0;
                 transform: rotate(0deg);
             }
         }
-        /* animation pour les platss*/
+        /* animation en hover pour les platss*/
         &:hover > .restaurant_menu_plats_carte_check{
             background-color: $bgrd_color_tertiaire;
             width: 100px;
@@ -92,7 +92,7 @@ $bgrd_color_tertiaire: #99E2D0;
                 transform: rotate(0deg);
             }
         }
-        /* animation pour les desserts*/
+        /* animation en hover pour les desserts*/
         &:hover > .restaurant_menu_desserts_carte_check{
             background-color: $bgrd_color_tertiaire;
             width: 100px;
@@ -125,8 +125,7 @@ $bgrd_color_tertiaire: #99E2D0;
             font-family: $font-family-de-base-gras;
             font-size: $font-size-de-titre;
             padding: 0 1.8rem 1rem 0;
-            transition: all 0.5s ease-in;
-        }
+            }
 
         &_check{
             background-color: $bgrd_color_tertiaire;
@@ -205,7 +204,9 @@ $tertiaire:#99E2D0;
     @include bgrd-color-saturation(20);
     
     opacity: 0;
-    animation: opacity 3s ease-in ;
+    animation: opacity 3s ease-in;
+    -webkit-animation: opacity 3s ease-in;
+    -o-animatio: opacity 3s ease-in;
                         
     &_circle{
         border-top: 40px solid $primaire;
@@ -213,12 +214,12 @@ $tertiaire:#99E2D0;
         border-bottom: 40px solid $primaire-clair;
         border-left: 40px solid $secondaire;
         background: $tertiaire;
-        border-radius: 50% ;
-        width: 280px;
-        height: 280px;
+        border-radius: 50%;
+        width: 27rem;
+        height: 27rem;
         
         animation: spin 0.5s linear infinite ;
-        -webkit-animation: spin 0.5s linear infinite  ;
+        -webkit-animation: spin 0.5s linear infinite;
         -o-animation: spin 0.5s linear infinite;
     }  
 
@@ -229,17 +230,34 @@ $tertiaire:#99E2D0;
         
         .lettre{
             color: $tertiaire;
-            font-size: 40px;
-            letter-spacing: 5px;
+            font-size: 3.5rem;
+            letter-spacing: 0.4rem;
             font-family: Roboto-Black;
                         
             animation: flash 0.5s linear infinite;
             -webkit-animation: flash 0.5s linear infinite;
             -o-animation: flash 0.5s linear infinite;
         }
-    } 
-
-    @keyframes flash{
+    }
+        /*animation de cercle*/
+    @-webkit-keyframes spin{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes spin {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+        /*animation des lettres de loading)*/
+    @-webkit-keyframes flash{
         0% {
             color: $tertiaire;
             text-shadow: 0 0 7px $tertiaire;
@@ -253,7 +271,7 @@ $tertiaire:#99E2D0;
             text-shadow: 0 0 7px $tertiaire;
         }
     }
-    @-webkit-keyframes flash{
+    @keyframes flash{
         0% {
             color: $tertiaire;
             text-shadow: 0 0 7px $tertiaire;
@@ -290,21 +308,19 @@ $tertiaire:#99E2D0;
         animation-delay: 0.6s;
     }
     
-        /*animation de loader_circle*/
-    @-webkit-keyframes spin {
+         /*animation de loader*/
+    @-webkit-keyframes opacity{
         0%{
-            transform: rotate(0deg);
+            opacity: 1;
+            z-index: 100;
+        }
+        70%{
+            opacity: 0.9;
+            z-index: 100;
         }
         100%{
-            transform: rotate(360deg);
-        }
-    }
-    @keyframes spin {
-        0%{
-            transform: rotate(0deg);
-        }
-        100%{
-            transform: rotate(360deg);
+            opacity: 0;
+            z-index: -50;
         }
     }
     @keyframes opacity{
