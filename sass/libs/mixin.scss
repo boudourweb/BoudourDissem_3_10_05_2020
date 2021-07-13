@@ -65,7 +65,6 @@ $bgrd_color_tertiaire: #99E2D0;
     
     
     &_carte{
-        @include transition_progressive;
         @include bgrd-color-saturation(0);
         cursor: pointer;
         width: 100%;
@@ -76,24 +75,74 @@ $bgrd_color_tertiaire: #99E2D0;
         align-items: flex-end;
         justify-content: space-between;
         overflow: hidden;
-        
+        transition: all 2s ease-in;
+       
         &:nth-child(1) {
-        
-            animation: translate 1s ease-out;
+            animation: translate 0s ease-out;
+            @keyframes translate{
+                0%{
+                    transform: translateY(20%);
+                    opacity: 0;
+                } 
+                100%{
+                    transform: translateY(0%);
+                    opacity: 1;   
+                }
+            }
         }
         &:nth-child(2) {
-           
-            animation: translate 1.5s ease-out ;
+            animation: translate 0.5s ease-out;
+            @keyframes translate{
+                0%{
+                    transform: translateY(20%);
+                    opacity: 0;
+                } 
+                100%{
+                    transform: translateY(0%);
+                    opacity: 1;   
+                }
+            }
         }
         &:nth-child(3) {
-            
-            animation: translate 2s ease-out ;
+           animation: translate 1s ease-out;
+            @keyframes translate{
+                0%{
+                    transform: translateY(20%);
+                    opacity: 0;
+                } 
+                100%{
+                    transform: translateY(0%);
+                    opacity: 1;   
+                }
+            }
         }
         &:nth-child(4) {
-            animation: translate 2.5s ease-out ;
-            
+            animation: translate 1.5s ease-out;
+            @keyframes translate{
+                0%{
+                    transform: translateY(20%);
+                    opacity: 0;
+                } 
+                100%{
+                    transform: translateY(0%);
+                    opacity: 1;   
+                }
+            }
         }
-        
+        &:nth-child(5) {
+           animation: translate 2s ease-out;
+            @keyframes translate{
+                0%{
+                    transform: translateY(20%);
+                    opacity: 0;
+                } 
+                100%{
+                    transform: translateY(0%);
+                    opacity: 1;   
+                }
+            }
+        }
+
         /* animation en hover pour les entrées*/
         &:hover > .restaurant_menu_entrees_carte_check{
             background-color: $bgrd_color_tertiaire;
@@ -171,27 +220,12 @@ $bgrd_color_tertiaire: #99E2D0;
                 transition: transform 0.5s ease-in;
             }
         }
+        
     }
+    
 }
 
-@mixin transition_progressive{
-    
-    transition: all 2.5s ease-in-out;
-    
-   
-    @keyframes translate{
-        0%{
-            transform: translateY(20%);
-            opacity: 0;
-        }  
-        
-        100%{
-            transform: translateY(0%);
-            opacity: 1;   
-        }
-    }
-    
-}
+
 
 
 $tertiaire-fonce: #649e90;
