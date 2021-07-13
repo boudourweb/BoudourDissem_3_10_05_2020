@@ -161,7 +161,6 @@ main {
   font-weight: 900;
   background-image: linear-gradient(to top left, #9356DC, #FF79DA);
   background-clip: text;
-  -webkit-background-clip: text;
   transition: all 1s;
 }
 .restaurant_nom_favori .fas, .restaurant_nom_favori .far {
@@ -194,8 +193,6 @@ main {
   opacity: 0 3s ease-in;
   transition: all 0.5s ease-in-out;
   animation: translate 1s ease-in-out;
-  -webkit-animation: translate 1s ease-in-out;
-  -o-animation: translate 1s ease-in-out;
   background: white;
   cursor: pointer;
   width: 100%;
@@ -211,16 +208,6 @@ main {
   /* animation en hover pour les desserts*/
 }
 @keyframes translate {
-  0% {
-    transform: translateY(20%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes translate {
   0% {
     transform: translateY(20%);
     opacity: 0;
@@ -320,8 +307,6 @@ main {
   opacity: 0 3s ease-in;
   transition: all 0.5s ease-in-out;
   animation: translate 1s ease-in-out;
-  -webkit-animation: translate 1s ease-in-out;
-  -o-animation: translate 1s ease-in-out;
   background: white;
   cursor: pointer;
   width: 100%;
@@ -337,16 +322,6 @@ main {
   /* animation en hover pour les desserts*/
 }
 @keyframes translate {
-  0% {
-    transform: translateY(20%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes translate {
   0% {
     transform: translateY(20%);
     opacity: 0;
@@ -446,8 +421,6 @@ main {
   opacity: 0 3s ease-in;
   transition: all 0.5s ease-in-out;
   animation: translate 1s ease-in-out;
-  -webkit-animation: translate 1s ease-in-out;
-  -o-animation: translate 1s ease-in-out;
   background: white;
   cursor: pointer;
   width: 100%;
@@ -463,16 +436,6 @@ main {
   /* animation en hover pour les desserts*/
 }
 @keyframes translate {
-  0% {
-    transform: translateY(20%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes translate {
   0% {
     transform: translateY(20%);
     opacity: 0;
