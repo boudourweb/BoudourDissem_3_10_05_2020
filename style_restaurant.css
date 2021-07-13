@@ -160,7 +160,6 @@ main {
   color: transparent;
   font-weight: 900;
   background-image: linear-gradient(to top left, #9356DC, #FF79DA);
-  background-clip: text;
   -webkit-background-clip: text;
   transition: all 1s;
 }
