@@ -41,6 +41,7 @@ $bgrd_color_tertiaire: #99E2D0;
         font-weight: 900;
         background-image: linear-gradient(to top left, $primaire, $secondaire);
         background-clip: text;
+        -webkit-background-clip: text;
         transition: all 1s;
     }
 }

@@ -389,6 +389,7 @@ header {
   font-weight: 900;
   background-image: linear-gradient(to top left, #9356DC, #FF79DA);
   background-clip: text;
+  -webkit-background-clip: text;
   transition: all 1s;
 }
 .restaurants__liste__bloc__favori .far, .restaurants__liste__bloc__favori .fas, .restaurants__liste__bloc__favori .fa {
