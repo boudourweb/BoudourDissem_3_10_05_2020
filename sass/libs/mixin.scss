@@ -40,8 +40,8 @@ $bgrd_color_tertiaire: #99E2D0;
         color: transparent;
         font-weight: 900;
         background-image: linear-gradient(to top left, $primaire, $secondaire);
-        -webkit-background-clip: text; 
         background-clip: text;
+        -webkit-background-clip: text; 
         transition: all 1s;
     }
 }
@@ -158,21 +158,8 @@ $bgrd_color_tertiaire: #99E2D0;
     opacity: 0 3s ease-in;
     transition: all 0.5s ease-in-out;
     animation: translate 1s ease-in-out;
-    -webkit-animation: translate 1s ease-in-out;
-    -o-animation: translate 1s ease-in-out;
-     
+   
     @keyframes translate{
-        0%{
-            transform: translateY(20%);
-            opacity: 0;
-        }  
-        
-        100%{
-            transform: translateY(0%);
-            opacity: 1;   
-        }
-    }
-    @-webkit-keyframes translate{
         0%{
             transform: translateY(20%);
             opacity: 0;
@@ -205,9 +192,7 @@ $tertiaire:#99E2D0;
     
     opacity: 0;
     animation: opacity 3s ease-in;
-    -webkit-animation: opacity 3s ease-in;
-    -o-animatio: opacity 3s ease-in;
-                        
+    
     &_circle{
         border-top: 40px solid $primaire;
         border-right: 40px solid $secondaire-clair;
@@ -219,8 +204,6 @@ $tertiaire:#99E2D0;
         height: 27rem;
         
         animation: spin 0.5s linear infinite ;
-        -webkit-animation: spin 0.5s linear infinite;
-        -o-animation: spin 0.5s linear infinite;
     }  
 
     &_loading{
@@ -235,19 +218,10 @@ $tertiaire:#99E2D0;
             font-family: Roboto-Black;
                         
             animation: flash 0.5s linear infinite;
-            -webkit-animation: flash 0.5s linear infinite;
-            -o-animation: flash 0.5s linear infinite;
         }
     }
         /*animation de cercle*/
-    @-webkit-keyframes spin{
-        0%{
-            transform: rotate(0deg);
-        }
-        100%{
-            transform: rotate(360deg);
-        }
-    }
+    
     @keyframes spin {
         0%{
             transform: rotate(0deg);
@@ -257,20 +231,7 @@ $tertiaire:#99E2D0;
         }
     }
         /*animation des lettres de loading)*/
-    @-webkit-keyframes flash{
-        0% {
-            color: $tertiaire;
-            text-shadow: 0 0 7px $tertiaire;
-        }
-        90%{
-            color: $tertiaire-fonce;
-            text-shadow: none;
-        }
-        100% {
-            color: $tertiaire;
-            text-shadow: 0 0 7px $tertiaire;
-        }
-    }
+    
     @keyframes flash{
         0% {
             color: $tertiaire;
@@ -309,20 +270,7 @@ $tertiaire:#99E2D0;
     }
     
          /*animation de loader*/
-    @-webkit-keyframes opacity{
-        0%{
-            opacity: 1;
-            z-index: 100;
-        }
-        70%{
-            opacity: 0.9;
-            z-index: 100;
-        }
-        100%{
-            opacity: 0;
-            z-index: -50;
-        }
-    }
+    
     @keyframes opacity{
         0%{
             opacity: 1;

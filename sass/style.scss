@@ -159,7 +159,7 @@ header{
                 
             &:hover{
                 @include bgrd-button-saturation(35);
-                transform: scale(1.05);
+                transform: scale(1.01);
                 &:hover .fas{
                     color: $primaire;
                     

@@ -89,8 +89,6 @@ body {
   background: #cccccc;
   opacity: 0;
   animation: opacity 3s ease-in;
-  -webkit-animation: opacity 3s ease-in;
-  -o-animatio: opacity 3s ease-in;
   /*animation de cercle*/
   /*animation des lettres de loading)*/
   /*animation de loader*/
@@ -106,8 +104,6 @@ body {
   width: 27rem;
   height: 27rem;
   animation: spin 0.5s linear infinite;
-  -webkit-animation: spin 0.5s linear infinite;
-  -o-animation: spin 0.5s linear infinite;
 }
 .loader_loading {
   display: flex;
@@ -120,16 +116,6 @@ body {
   letter-spacing: 0.4rem;
   font-family: Roboto-Black;
   animation: flash 0.5s linear infinite;
-  -webkit-animation: flash 0.5s linear infinite;
-  -o-animation: flash 0.5s linear infinite;
-}
-@-webkit-keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 @keyframes spin {
   0% {
@@ -137,20 +123,6 @@ body {
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes flash {
-  0% {
-    color: #99E2D0;
-    text-shadow: 0 0 7px #99E2D0;
-  }
-  90% {
-    color: #649e90;
-    text-shadow: none;
-  }
-  100% {
-    color: #99E2D0;
-    text-shadow: 0 0 7px #99E2D0;
   }
 }
 @keyframes flash {
@@ -187,20 +159,6 @@ body {
 }
 .loader .lettre:nth-child(7) {
   animation-delay: 0.6s;
-}
-@-webkit-keyframes opacity {
-  0% {
-    opacity: 1;
-    z-index: 100;
-  }
-  70% {
-    opacity: 0.9;
-    z-index: 100;
-  }
-  100% {
-    opacity: 0;
-    z-index: -50;
-  }
 }
 @keyframes opacity {
   0% {
@@ -351,7 +309,7 @@ header {
 }
 .fonctionnement__boutons .fonctionnement__bouton:hover {
   background: #f2eafb;
-  transform: scale(1.05);
+  transform: scale(1.01);
 }
 .fonctionnement__boutons .fonctionnement__bouton:hover:hover .fas {
   color: #9356DC;
@@ -430,8 +388,8 @@ header {
   color: transparent;
   font-weight: 900;
   background-image: linear-gradient(to top left, #9356DC, #FF79DA);
-  -webkit-background-clip: text;
   background-clip: text;
+  -webkit-background-clip: text;
   transition: all 1s;
 }
 .restaurants__liste__bloc__favori .far, .restaurants__liste__bloc__favori .fas, .restaurants__liste__bloc__favori .fa {
