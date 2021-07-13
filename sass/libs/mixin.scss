@@ -15,11 +15,9 @@ $bgrd_color_tertiaire: #99E2D0;
 }
 
 @mixin bouton-violet {
-    
     border-radius: 50px;
     box-shadow: $box-shadow-bouton;
     font-family: $font-family-de-base;
-    
     padding: 13px 10px;
     color: white;
     text-align: center;
@@ -30,6 +28,7 @@ $bgrd_color_tertiaire: #99E2D0;
         background-image: linear-gradient(to top left, $primaire-clair, $secondaire-clair);
     }
 }
+
 @mixin coeur-de-fevori{
     cursor: pointer;
     .far, .fa {
@@ -41,7 +40,7 @@ $bgrd_color_tertiaire: #99E2D0;
         font-weight: 900;
         background-image: linear-gradient(to top left, $primaire, $secondaire);
         -webkit-background-clip: text;
-        transition: all 1s;
+        transition: all 0.5s ease-in-out;
     }
 }
 
@@ -56,12 +55,15 @@ $bgrd_color_tertiaire: #99E2D0;
         &::after{
             content: '';
             display: block;
-            width: 50px;
-            height: 4px;
+            width: 4rem;
+            height: 0.3rem;
             background-color: $bgrd_color_tertiaire;
             margin: 5px 0px 20px 5px;
         }
     }
+    
+    
+    
     &_carte{
         @include transition_progressive;
         @include bgrd-color-saturation(0);
@@ -75,10 +77,27 @@ $bgrd_color_tertiaire: #99E2D0;
         justify-content: space-between;
         overflow: hidden;
         
+        &:nth-child(1) {
+        
+            animation: translate 1s ease-out;
+        }
+        &:nth-child(2) {
+           
+            animation: translate 1.5s ease-out ;
+        }
+        &:nth-child(3) {
+            
+            animation: translate 2s ease-out ;
+        }
+        &:nth-child(4) {
+            animation: translate 2.5s ease-out ;
+            
+        }
+        
         /* animation en hover pour les entrées*/
         &:hover > .restaurant_menu_entrees_carte_check{
             background-color: $bgrd_color_tertiaire;
-            width: 100px;
+            width: 8.3rem;
             .restaurant_menu_entrees_carte_check_icon{
                 transform: rotate(0deg);
             }
@@ -86,7 +105,7 @@ $bgrd_color_tertiaire: #99E2D0;
         /* animation en hover pour les platss*/
         &:hover > .restaurant_menu_plats_carte_check{
             background-color: $bgrd_color_tertiaire;
-            width: 100px;
+            width: 8.3rem;
             .restaurant_menu_plats_carte_check_icon{
                 transform: rotate(0deg);
             }
@@ -94,21 +113,22 @@ $bgrd_color_tertiaire: #99E2D0;
         /* animation en hover pour les desserts*/
         &:hover > .restaurant_menu_desserts_carte_check{
             background-color: $bgrd_color_tertiaire;
-            width: 100px;
+            width: 8.3rem;
             .restaurant_menu_desserts_carte_check_icon{
                 transform: rotate(0deg);
             }
         }
 
         &_nom{
-            overflow: hidden;
+            
             white-space: nowrap;
+            overflow: hidden;
             text-overflow: ellipsis;
             width: 100%;
             height: 100%;
             padding: 1rem;           
             
-            h3{
+            h2{
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
@@ -128,7 +148,7 @@ $bgrd_color_tertiaire: #99E2D0;
 
         &_check{
             background-color: $bgrd_color_tertiaire;
-            width: 0px;
+            width: 0rem;
             height: 100%;
             overflow: hidden;
             display: flex;
@@ -153,10 +173,11 @@ $bgrd_color_tertiaire: #99E2D0;
         }
     }
 }
+
 @mixin transition_progressive{
-    opacity: 0 3s ease-in;
-    transition: all 0.5s ease-in-out;
-    animation: translate 1s ease-in-out;
+    
+    transition: all 2.5s ease-in-out;
+    
    
     @keyframes translate{
         0%{
@@ -169,10 +190,13 @@ $bgrd_color_tertiaire: #99E2D0;
             opacity: 1;   
         }
     }
+    
 }
+
 
 $tertiaire-fonce: #649e90;
 $tertiaire:#99E2D0;
+
 @mixin loader{
        
     position: fixed;
@@ -245,7 +269,7 @@ $tertiaire:#99E2D0;
             text-shadow: 0 0 7px $tertiaire;
         }
     }
-    
+      /*Retarder les lettres avec un décalage*/
     .lettre:nth-child(1) {
         animation-delay: 0.0s;
     }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6, a {
   margin: 0;
   padding: 0;
@@ -91,6 +92,7 @@ body {
   animation: opacity 3s ease-in;
   /*animation de cercle*/
   /*animation des lettres de loading)*/
+  /*Retarder les lettres avec un décalage*/
   /*animation de loader*/
   z-index: -50;
 }
@@ -389,7 +391,7 @@ header {
   font-weight: 900;
   background-image: linear-gradient(to top left, #9356DC, #FF79DA);
   -webkit-background-clip: text;
-  transition: all 1s;
+  transition: all 0.5s ease-in-out;
 }
 .restaurants__liste__bloc__favori .far, .restaurants__liste__bloc__favori .fas, .restaurants__liste__bloc__favori .fa {
   position: absolute;

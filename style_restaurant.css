@@ -161,7 +161,7 @@ main {
   font-weight: 900;
   background-image: linear-gradient(to top left, #9356DC, #FF79DA);
   -webkit-background-clip: text;
-  transition: all 1s;
+  transition: all 0.5s ease-in-out;
 }
 .restaurant_nom_favori .fas, .restaurant_nom_favori .far {
   position: absolute;
@@ -184,15 +184,13 @@ main {
 .restaurant_menu_entrees_type::after {
   content: "";
   display: block;
-  width: 50px;
-  height: 4px;
+  width: 4rem;
+  height: 0.3rem;
   background-color: #99E2D0;
   margin: 5px 0px 20px 5px;
 }
 .restaurant_menu_entrees_carte {
-  opacity: 0 3s ease-in;
-  transition: all 0.5s ease-in-out;
-  animation: translate 1s ease-in-out;
+  transition: all 2.5s ease-in-out;
   background: white;
   cursor: pointer;
   width: 100%;
@@ -217,36 +215,48 @@ main {
     opacity: 1;
   }
 }
+.restaurant_menu_entrees_carte:nth-child(1) {
+  animation: translate 1s ease-out;
+}
+.restaurant_menu_entrees_carte:nth-child(2) {
+  animation: translate 1.5s ease-out;
+}
+.restaurant_menu_entrees_carte:nth-child(3) {
+  animation: translate 2s ease-out;
+}
+.restaurant_menu_entrees_carte:nth-child(4) {
+  animation: translate 2.5s ease-out;
+}
 .restaurant_menu_entrees_carte:hover > .restaurant_menu_entrees_carte_check {
   background-color: #99E2D0;
-  width: 100px;
+  width: 8.3rem;
 }
 .restaurant_menu_entrees_carte:hover > .restaurant_menu_entrees_carte_check .restaurant_menu_entrees_carte_check_icon {
   transform: rotate(0deg);
 }
 .restaurant_menu_entrees_carte:hover > .restaurant_menu_plats_carte_check {
   background-color: #99E2D0;
-  width: 100px;
+  width: 8.3rem;
 }
 .restaurant_menu_entrees_carte:hover > .restaurant_menu_plats_carte_check .restaurant_menu_plats_carte_check_icon {
   transform: rotate(0deg);
 }
 .restaurant_menu_entrees_carte:hover > .restaurant_menu_desserts_carte_check {
   background-color: #99E2D0;
-  width: 100px;
+  width: 8.3rem;
 }
 .restaurant_menu_entrees_carte:hover > .restaurant_menu_desserts_carte_check .restaurant_menu_desserts_carte_check_icon {
   transform: rotate(0deg);
 }
 .restaurant_menu_entrees_carte_nom {
-  overflow: hidden;
   white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
   height: 100%;
   padding: 1rem;
 }
-.restaurant_menu_entrees_carte_nom h3 {
+.restaurant_menu_entrees_carte_nom h2 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -264,7 +274,7 @@ main {
 }
 .restaurant_menu_entrees_carte_check {
   background-color: #99E2D0;
-  width: 0px;
+  width: 0rem;
   height: 100%;
   overflow: hidden;
   display: flex;
@@ -298,15 +308,13 @@ main {
 .restaurant_menu_plats_type::after {
   content: "";
   display: block;
-  width: 50px;
-  height: 4px;
+  width: 4rem;
+  height: 0.3rem;
   background-color: #99E2D0;
   margin: 5px 0px 20px 5px;
 }
 .restaurant_menu_plats_carte {
-  opacity: 0 3s ease-in;
-  transition: all 0.5s ease-in-out;
-  animation: translate 1s ease-in-out;
+  transition: all 2.5s ease-in-out;
   background: white;
   cursor: pointer;
   width: 100%;
@@ -331,36 +339,48 @@ main {
     opacity: 1;
   }
 }
+.restaurant_menu_plats_carte:nth-child(1) {
+  animation: translate 1s ease-out;
+}
+.restaurant_menu_plats_carte:nth-child(2) {
+  animation: translate 1.5s ease-out;
+}
+.restaurant_menu_plats_carte:nth-child(3) {
+  animation: translate 2s ease-out;
+}
+.restaurant_menu_plats_carte:nth-child(4) {
+  animation: translate 2.5s ease-out;
+}
 .restaurant_menu_plats_carte:hover > .restaurant_menu_entrees_carte_check {
   background-color: #99E2D0;
-  width: 100px;
+  width: 8.3rem;
 }
 .restaurant_menu_plats_carte:hover > .restaurant_menu_entrees_carte_check .restaurant_menu_entrees_carte_check_icon {
   transform: rotate(0deg);
 }
 .restaurant_menu_plats_carte:hover > .restaurant_menu_plats_carte_check {
   background-color: #99E2D0;
-  width: 100px;
+  width: 8.3rem;
 }
 .restaurant_menu_plats_carte:hover > .restaurant_menu_plats_carte_check .restaurant_menu_plats_carte_check_icon {
   transform: rotate(0deg);
 }
 .restaurant_menu_plats_carte:hover > .restaurant_menu_desserts_carte_check {
   background-color: #99E2D0;
-  width: 100px;
+  width: 8.3rem;
 }
 .restaurant_menu_plats_carte:hover > .restaurant_menu_desserts_carte_check .restaurant_menu_desserts_carte_check_icon {
   transform: rotate(0deg);
 }
 .restaurant_menu_plats_carte_nom {
-  overflow: hidden;
   white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
   height: 100%;
   padding: 1rem;
 }
-.restaurant_menu_plats_carte_nom h3 {
+.restaurant_menu_plats_carte_nom h2 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -378,7 +398,7 @@ main {
 }
 .restaurant_menu_plats_carte_check {
   background-color: #99E2D0;
-  width: 0px;
+  width: 0rem;
   height: 100%;
   overflow: hidden;
   display: flex;
@@ -412,15 +432,13 @@ main {
 .restaurant_menu_desserts_type::after {
   content: "";
   display: block;
-  width: 50px;
-  height: 4px;
+  width: 4rem;
+  height: 0.3rem;
   background-color: #99E2D0;
   margin: 5px 0px 20px 5px;
 }
 .restaurant_menu_desserts_carte {
-  opacity: 0 3s ease-in;
-  transition: all 0.5s ease-in-out;
-  animation: translate 1s ease-in-out;
+  transition: all 2.5s ease-in-out;
   background: white;
   cursor: pointer;
   width: 100%;
@@ -445,36 +463,48 @@ main {
     opacity: 1;
   }
 }
+.restaurant_menu_desserts_carte:nth-child(1) {
+  animation: translate 1s ease-out;
+}
+.restaurant_menu_desserts_carte:nth-child(2) {
+  animation: translate 1.5s ease-out;
+}
+.restaurant_menu_desserts_carte:nth-child(3) {
+  animation: translate 2s ease-out;
+}
+.restaurant_menu_desserts_carte:nth-child(4) {
+  animation: translate 2.5s ease-out;
+}
 .restaurant_menu_desserts_carte:hover > .restaurant_menu_entrees_carte_check {
   background-color: #99E2D0;
-  width: 100px;
+  width: 8.3rem;
 }
 .restaurant_menu_desserts_carte:hover > .restaurant_menu_entrees_carte_check .restaurant_menu_entrees_carte_check_icon {
   transform: rotate(0deg);
 }
 .restaurant_menu_desserts_carte:hover > .restaurant_menu_plats_carte_check {
   background-color: #99E2D0;
-  width: 100px;
+  width: 8.3rem;
 }
 .restaurant_menu_desserts_carte:hover > .restaurant_menu_plats_carte_check .restaurant_menu_plats_carte_check_icon {
   transform: rotate(0deg);
 }
 .restaurant_menu_desserts_carte:hover > .restaurant_menu_desserts_carte_check {
   background-color: #99E2D0;
-  width: 100px;
+  width: 8.3rem;
 }
 .restaurant_menu_desserts_carte:hover > .restaurant_menu_desserts_carte_check .restaurant_menu_desserts_carte_check_icon {
   transform: rotate(0deg);
 }
 .restaurant_menu_desserts_carte_nom {
-  overflow: hidden;
   white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
   height: 100%;
   padding: 1rem;
 }
-.restaurant_menu_desserts_carte_nom h3 {
+.restaurant_menu_desserts_carte_nom h2 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -492,7 +522,7 @@ main {
 }
 .restaurant_menu_desserts_carte_check {
   background-color: #99E2D0;
-  width: 0px;
+  width: 0rem;
   height: 100%;
   overflow: hidden;
   display: flex;
