@@ -451,20 +451,6 @@ footer nav a .fas, footer nav a .fa {
     width: 300px;
   }
 
-  .restaurants {
-    padding: 40px 15px 20px 15px;
-  }
-  .restaurants__liste {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .restaurants__liste__bloc {
-    width: 48%;
-    margin: 0 0.25rem 0.5rem 0.25rem;
-  }
-
   .fonctionnement {
     padding: 0px 15px 0px 20px;
   }
@@ -483,6 +469,19 @@ footer nav a .fas, footer nav a .fa {
   }
   .fonctionnement__boutons .fonctionnement__bouton__icon {
     left: 2rem;
+  }
+  .fonctionnement .restaurants {
+    padding: 40px 15px 20px 15px;
+  }
+  .fonctionnement .restaurants__liste {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .fonctionnement .restaurants__liste__bloc {
+    width: 48%;
+    margin: 0 0.25rem 0.5rem 0.25rem;
   }
 
   footer {
