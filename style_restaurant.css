@@ -730,10 +730,70 @@ footer nav a .fas, footer nav a .fa {
   html {
     font-size: 17px;
   }
+
+  .restaurant {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .restaurant_nom {
+    display: flex;
+    justify-content: space-around;
+  }
+  .restaurant_nom_favori {
+    display: inline-block;
+  }
+  .restaurant_nom_favori .fas, .restaurant_nom_favori .far {
+    position: inherit;
+  }
+  .restaurant_menu {
+    align-items: center;
+  }
+  .restaurant_menu_entrees_carte {
+    width: 500px;
+  }
+  .restaurant_menu_plats_carte {
+    width: 500px;
+  }
+  .restaurant_menu_desserts_carte {
+    width: 500px;
+  }
+
+  .restaurant_bouton_commande {
+    width: 300px;
+  }
 }
 @media screen and (min-width: 700px) and (max-width: 992px) {
   html {
     font-size: 18px;
+  }
+
+  .restaurant {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .restaurant_nom {
+    display: flex;
+    justify-content: space-around;
+  }
+  .restaurant_nom_favori {
+    display: inline-block;
+  }
+  .restaurant_nom_favori .fas, .restaurant_nom_favori .far {
+    position: inherit;
+  }
+  .restaurant_menu {
+    align-items: center;
+  }
+  .restaurant_menu_entrees_carte {
+    width: 500px;
+  }
+  .restaurant_menu_plats_carte {
+    width: 500px;
+  }
+  .restaurant_menu_desserts_carte {
+    width: 500px;
+  }
+
+  .restaurant_bouton_commande {
+    width: 300px;
   }
 
   footer {
@@ -757,7 +817,33 @@ footer nav a .fas, footer nav a .fa {
   }
 
   .restaurant {
-    padding: 4rem 14rem 2rem 14rem;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .restaurant_nom {
+    display: flex;
+    justify-content: space-around;
+  }
+  .restaurant_nom_favori {
+    display: inline-block;
+  }
+  .restaurant_nom_favori .fas, .restaurant_nom_favori .far {
+    position: inherit;
+  }
+  .restaurant_menu {
+    align-items: center;
+  }
+  .restaurant_menu_entrees_carte {
+    width: 500px;
+  }
+  .restaurant_menu_plats_carte {
+    width: 500px;
+  }
+  .restaurant_menu_desserts_carte {
+    width: 500px;
+  }
+
+  .restaurant_bouton_commande {
+    width: 300px;
   }
 
   footer {
@@ -776,11 +862,50 @@ footer nav a .fas, footer nav a .fa {
   }
 
   .restaurant {
-    padding: 4rem 14rem 2rem 14rem;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .restaurant_nom {
+    display: flex;
+    justify-content: space-around;
+  }
+  .restaurant_nom_favori {
+    display: inline-block;
+  }
+  .restaurant_nom_favori .fas, .restaurant_nom_favori .far {
+    position: inherit;
+  }
+  .restaurant_menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .restaurant_menu_entrees {
+    padding: 25px;
+  }
+  .restaurant_menu_entrees_carte {
+    width: 500px;
+  }
+  .restaurant_menu_plats {
+    padding: 25px;
+  }
+  .restaurant_menu_plats_carte {
+    width: 500px;
+  }
+  .restaurant_menu_desserts {
+    padding: 25px;
+  }
+  .restaurant_menu_desserts_carte {
+    width: 500px;
+  }
+
+  .restaurant_bouton_commande {
+    width: 300px;
   }
 
   footer {
-    padding: 31px 77px 20px 36px;
+    padding: 60px;
   }
   footer nav {
     padding: 30px 0 30px 0;

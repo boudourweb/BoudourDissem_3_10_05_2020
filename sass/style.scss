@@ -57,9 +57,7 @@ header{
     z-index: 1;
 }
 #logo{
-    @include bgrd-color-saturation(0);
     padding: 25px 0px 15px 0px;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,8 +68,6 @@ header{
 
 .explorer{
     position: relative;
-    
-
     margin: 0 0 40px 0;
     
     &__emplacement{
@@ -321,19 +317,20 @@ footer{
                 }
             }
         }
-        .restaurants{
-            padding: 40px 15px 20px 15px;
-            &__liste{
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                &__bloc{
-                    width: 48%;
-                    margin: 0 0.25rem 0.5rem 0.25rem;
-                }
+    .restaurants{
+        padding: 40px 15px 20px 15px;
+        
+        &__liste{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            &__bloc{
+                width: 48%;
+                margin: 0 0.25rem 0.5rem 0.25rem;
             }
         }
+    }
     }
     footer{    
         padding: 35px 20px 20px 40px;
@@ -361,6 +358,27 @@ footer{
             }
         }
     }
+    .fonctionnement{
+        padding: 0px 15px 0px 20px;
+        
+        &__boutons{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px 0px 50px 0px;
+            
+            .fonctionnement__bouton{
+                font-size: 1.2rem;
+                padding: 2.3rem 2rem 2.3rem 4rem;
+                margin: 11px 13px;
+                text-align: right;
+                &__icon{
+                    left: 2rem;
+                }
+            }
+        }
+    }
     .restaurants{
         padding: 40px 15px 20px 15px;
         &__liste{
@@ -375,28 +393,6 @@ footer{
             }
         }
     }
-    .fonctionnement{
-        padding: 0px 15px 0px 20px;
-        
-        &__boutons{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 20px 0px 50px 0px;
-            
-            .fonctionnement__bouton{
-                
-                font-size: 1.2rem;
-                padding: 2.3rem 2rem 2.3rem 4rem;
-                margin: 11px 13px;
-                text-align: right;
-                &__icon{
-                    left: 2rem;
-                }
-            }
-        }
-    }
     footer{
         padding: 31px 28px 20px 36px;
         nav{ 
@@ -404,11 +400,6 @@ footer{
             justify-content: space-between;
             flex-direction: row;
             padding: 30px 35px 30px 0;
-        }
-    }
-    @media screen and (min-width: 954px) and (max-width: 992px){
-        html{
-            font-size: 15px;
         }
     }
 }
@@ -423,35 +414,20 @@ footer{
             }
         }
     }
-    .restaurants{
-        padding: 40px 15px 20px 15px;
-        &__liste{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            
-            &__bloc{
-                width: 32%;
-                margin: 0 0.25rem 0.5rem 0.25rem;
-            }
-        }
-    }
     .fonctionnement{
         padding: 0px 15px 0px 20px;
-        
         &__boutons{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: center;
             padding: 20px 0px 50px 0px;
             
             .fonctionnement__bouton{
                 
                 font-size: 1.2rem;
                 padding: 2.3rem 2rem 2.3rem 4rem;
-                margin: 11px 13px;
+                margin: 11px 25px;
                 text-align: right;
                 &__icon{
                     left: 2rem;
@@ -459,6 +435,20 @@ footer{
             }
         }
     }
+        .restaurants{
+            padding: 40px 15px 20px 15px;
+            &__liste{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                
+                &__bloc{
+                    width: 350px;
+                    margin: 0 10px 6px 10px;
+                }
+            }
+        }
     footer{
         padding: 31px 77px 20px 36px;
         nav{ 
@@ -480,42 +470,43 @@ footer{
         }
     }
 }
+.fonctionnement{
+    padding: 0px 15px 0px 20px;
+    &__boutons{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 0px 50px 0px;
+        
+        .fonctionnement__bouton{
+            
+            font-size: 1.2rem;
+            padding: 2.3rem 2rem 2.3rem 4rem;
+            margin: 11px 25px;
+            text-align: right;
+            &__icon{
+                left: 2rem;
+            }
+        }
+    }
+}
     .restaurants{
-        padding: 40px 15px 20px 15px;
+        
+        padding: 40px 20px 20px 20px;
         &__liste{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: center;
             
             &__bloc{
-                width: 24%;
-                margin: 0 0.25rem 0.5rem 0.25rem;
+                width: 350px;
+                margin: 0 10px 6px 10px;
             }
         }
     }
-    .fonctionnement{
-        padding: 0px 15px 0px 20px;
-        
-        &__boutons{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 20px 0px 50px 0px;
-            
-            .fonctionnement__bouton{
-                
-                font-size: 1.2rem;
-                padding: 2.3rem 2rem 2.3rem 4rem;
-                margin: 11px 13px;
-                text-align: right;
-                &__icon{
-                    left: 2rem;
-                }
-            }
-        }
-    }
+    
     footer{
         padding: 31px 77px 20px 36px;
         nav{ 

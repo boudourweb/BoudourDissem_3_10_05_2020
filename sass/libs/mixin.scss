@@ -1,7 +1,6 @@
 $bgrd_color: rgb(255, 255, 255);
 @mixin bgrd-color-saturation($saturation: 0) {
     background: darken($bgrd_color, $saturation);
-    
 }
 
 $bgrd_color_primaire: #9356DC;
